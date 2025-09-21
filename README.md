@@ -1,6 +1,6 @@
 # 🟢 Task 2 - Real-Time Chat App Using WebSocket
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![WebSocket](https://img.shields.io/badge/WebSocket-007ACC?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![WebSocket](https://img.shields.io/badge/WebSocket-007ACC?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ---
 
@@ -83,20 +83,20 @@ node server.js
 
 🌟 Features
 
-Username-based login
+-Username-based login
 
-Real-time chat using WebSocket
+-Real-time chat using WebSocket
 
-WhatsApp-style UI:
+-WhatsApp-style UI:
 
-Green header and sent messages
+--Green header and sent messages
 
-White bubbles for received messages
+--White bubbles for received messages
 
-Timestamps and sender names
+--Timestamps and sender names
 
-Responsive design for desktop and mobile
+-Responsive design for desktop and mobile
 
-Single component handles both join page and chat page
+-Single component handles both join page and chat page
 
 ###output
