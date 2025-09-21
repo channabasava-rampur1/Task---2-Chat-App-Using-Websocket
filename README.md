@@ -99,7 +99,9 @@ node server.js
 
 -Single component handles both join page and chat page
 
-###output
+---
+
+### **output**
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d4ed00c2-4fba-450c-8dcc-d758a3e345ff" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e7f13cff-0b41-41f7-93cc-7de597c1b839" />
