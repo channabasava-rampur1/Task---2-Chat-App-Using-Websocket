@@ -1,117 +1,102 @@
-# Task---2-Chat-App-Using-Websocket
+# 🟢 Task 2 - Real-Time Chat App Using WebSocket
 
-*COMPANY* : CODTECH IT SOLUTION
-*NAME* : CHANNABASAVA RAMPUR
-*INTERN ID* : CT06DY2265
-*DOMAIN* : FULL STACK WEB DEVELOPMENT
-*DURATION* : 6 WEEKS
-*MENTOR* : NEELA SANTHOSH
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![WebSocket](https://img.shields.io/badge/WebSocket-007ACC?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
+---
 
-##Description 
+### **Project Information**
 
-Real Time Chat Application using websocket
+- **Company:** CODTECH IT SOLUTION  
+- **Intern Name:** Channabasava Rampur  
+- **Intern ID:** CT06DY2265  
+- **Domain:** Full Stack Web Development  
+- **Duration:** 6 Weeks  
+- **Mentor:** Neela Santhosh  
 
-How it Works
+---
 
-Frontend (Website UI)
+## 💬 Project Description
 
-The user interacts with a webpage that has a joinerscreen.
+This is a **Real-Time Chat Application** built using **WebSocket**, designed with a **WhatsApp-style interface**. Users can:
 
-User enters the chat app by typing his/her name.
+- Enter a **username**  
+- Join the chat room  
+- Send and receive messages in **real-time**  
 
-All the users joined the chat can start sharing their messages.
+The app features a modern UI, responsive design, and seamless communication between multiple users.
 
-Backend (websocket and server)
+---
 
-Connect to WebSocket Server
+## ⚙️ How It Works
 
-The frontend (ChatWindow.jsx) establishes a WebSocket connection to the Node.js backend (ws://localhost:8080).
+### **Frontend (Website UI)**
 
-This connection allows real-time two-way communication between the client and the server.
+1. Users are greeted with a **join screen**.  
+2. They enter their username to join the chat.  
+3. All users in the chat room can **send and receive messages in real-time**.  
 
-Send Message
+### **Backend (WebSocket Server)**
 
-When the user types a message and presses Send, the frontend sends a JSON object:
+#### 1️⃣ Connect to WebSocket Server
+- The frontend (`ChatWindow.jsx`) connects to the Node.js backend via `ws://localhost:8080`.  
+- Enables **two-way real-time communication**.  
 
-{ "user": "Username", "text": "Message text", "time": "HH:MM" }
+#### 2️⃣ Send Message
+- Users type messages and press **Send**.  
+- Frontend sends a JSON object:
 
-The message is sent via the WebSocket connection to the backend.
+json
+{
+  "user": "Username",
+  "text": "Message text",
+  "time": "HH:MM"
+}
 
-Broadcast Message
+3️⃣ Broadcast Message
 
-The WebSocket server receives the message from the client.
+Server receives the message and broadcasts it to all connected clients, including the sender.
 
-It broadcasts the same message to all connected clients, including the sender.
+4️⃣ Receive & Display Message
 
-Receive Message
+Clients listen for incoming messages and update the chat interface.
 
-Each client listens for incoming messages via the WebSocket connection.
+Messages by the current user appear as green bubbles (right), and others appear as white bubbles (left).
 
-When a message is received, it is parsed and added to the local state (messages).
+Each message displays the username and timestamp, mimicking WhatsApp.
 
-Display Message
-
-The frontend updates the chat interface with the new message.
-
-Messages sent by the current user appear as green bubbles on the right, and messages from others appear as white bubbles on the left.
-
-Each message shows the username and timestamp like WhatsApp.
-
-Tech Stack
-
-Frontend: React + vite , CSS , Javascript.
-
-Backend: Javascript and websocket
-
-
-How to Run
-
-Frontend:
-
-Clone this project:
-
-
-git clone <your-repo-link>
-
+🛠️ Tech Stack
+Frontend	Backend
+React + Vite	Node.js + WebSocket
+JavaScript	JavaScript
+CSS	-
+🚀 How to Run
+Frontend
+git clone (https://github.com/channabasava-rampur1/Task---2-Chat-App-Using-Websocket.git)
 cd client
-
-install the dependencies
-
 npm install -y
+npm run dev
 
-To start the frontend
-
-npm run dev 
-
-Backend:
-
-Install dependencies:
- 
+Backend
 npm install -y
-
 npm install ws
-
-To run backend:
-
 node server.js
 
+🌟 Features
 
-## 🌟 Features
+Username-based login
 
-- Enter a **username** before joining the chat.
-- Real-time chat using **WebSocket**.
-- WhatsApp-style UI:
-  - Green header and sent messages.
-  - White bubbles for received messages.
-  - Timestamps and sender names.
-- Responsive design for desktop and mobile.
-- Single component handles both **join page and chat page**.
+Real-time chat using WebSocket
 
-##output
+WhatsApp-style UI:
 
-<img width="1912" height="861" alt="Image" src="https://github.com/user-attachments/assets/2353f411-4511-4a7d-8b6e-a938a565a2a8" />
+Green header and sent messages
 
-<img width="1918" height="864" alt="Image" src="https://github.com/user-attachments/assets/23eb7aba-37e7-455f-9c74-b680b0ee93f8" />
+White bubbles for received messages
 
-<img width="1898" height="875" alt="Image" src="https://github.com/user-attachments/assets/dd588626-7b7f-4a5f-9e19-4f0d72c2c559" />
+Timestamps and sender names
+
+Responsive design for desktop and mobile
+
+Single component handles both join page and chat page
+
+###output
