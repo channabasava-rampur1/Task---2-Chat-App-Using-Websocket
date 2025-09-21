@@ -68,8 +68,11 @@ Each message displays the username and timestamp, mimicking WhatsApp.
 Frontend	Backend
 React + Vite	Node.js + WebSocket
 JavaScript	JavaScript
-CSS	-
+CSS	
+
 🚀 How to Run
+
+```
 Frontend
 git clone (https://github.com/channabasava-rampur1/Task---2-Chat-App-Using-Websocket.git)
 cd client
@@ -80,6 +83,7 @@ Backend
 npm install -y
 npm install ws
 node server.js
+```
 
 🌟 Features
 
